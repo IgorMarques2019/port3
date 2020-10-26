@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Please write me a song';
+    src: url('Pleasewritemeasong.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WRESTLEMANIA';
+    src: url('WRESTLEMANIA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Market Deco';
+    src: url('MarketDeco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

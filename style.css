@@ -1,0 +1,440 @@
+/* ---------------------------- FOMATAÇÃO PADRÃO E FONTES ---------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+   
+    height: 100%;
+    background-color: #0f0e16;
+}
+
+strong {
+    color: #f25f4c;
+}
+
+cite {
+    color: white;
+    margin: 10px;
+}
+
+@font-face {
+    font-family: 'Please write me a song';
+    src: url('Pleasewritemeasong.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WRESTLEMANIA';
+    src: url('WRESTLEMANIA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Market Deco';
+    src: url('MarketDeco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --------------------------------- HEADER --------------------------------- */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    background-color: #0f0e17;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+header ul {
+    margin: 0;
+    text-align: center;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+header ul li a {
+    font-size: 0.8em;
+    display: block;
+    padding: 5px 10px;
+    font-family: 'Please write me a song';
+    color: white;
+    border-radius: 2px;
+}
+
+header ul li a:hover {
+    background-color: #ff8906;
+    color: white;
+    text-decoration: none;
+}
+
+/* -------------------------------- sections -------------------------------- */
+
+section#start-name {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #0f0e17 url(./img/fundo.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#start-name #apresentacao {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: left;
+    text-align: center;
+}
+
+section#start-name #apresentacao p {
+    font-family: 'Please write me a song';
+    color: white;
+    font-size: 1.2em;
+}
+
+section#start-name #apresentacao h3 {
+    color: white;
+    font-family: 'Market Deco';
+    letter-spacing: 3px;
+    color: #ff8906;
+    font-weight: normal;
+}
+
+section#start-name #apresentacao span {
+    font-size: 1.1em;
+    color: #a7a9be;
+    font-family: 'Please write me a song';
+    margin-bottom: 10px;
+}
+
+section#start-name #apresentacao input {
+    margin-top: 20px;
+    width: 120px;
+    padding: 10px 14px;
+    background-color: #ff8906;
+    border-radius: 30px;
+    color: white;
+    border: none;
+}
+
+section#start-name #apresentacao input:focus {
+    outline: none;
+}
+
+section#start-name #apresentacao input:hover {
+    background: linear-gradient(to right, #ff8906, #fc9e33);
+    border: 1px solid white;
+}
+
+section#profile-description {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px;
+    background: #171622;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#profile-description #text-description {
+    width: 100%;
+}
+
+section#profile-description #text-description p {
+    color: #a7a9be;
+    font-weight: normal;
+    text-align: justify;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+section#aprendizado ul {
+    color: white;
+    width: 260px;
+    margin: 0 auto;
+}
+
+section#aprendizado {
+    margin-bottom: 10px;
+}
+
+section#aprendizado {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #0F0E16;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+section#aprendizado h2 {
+    width: 100%;
+    text-align: center;
+    color: #FF8806;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+section#aprendizado .linguagem {
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e53170;
+    background-color: #171622;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: baseline;
+    border-radius: 2px;
+    margin: 4px;
+}
+
+section#aprendizado .linguagem i {
+    color: white;
+    font-size: 3em;
+}
+
+section#aprendizado .linguagem p {
+    text-align: justify;
+    font-size: 0.9em;
+    color: #e53170;
+}
+
+section#aprendizado .ling-info {
+    font-size: 1.2em;
+}
+
+section#aprendizado .ling-info p {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+section#projetos {
+    box-sizing:border-box;
+    width: 100%;
+    padding:20px;
+    background-color: #171622;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.projetos-info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: stretch;
+    justify-content:flex-start;
+    box-shadow: 0px 0px 5px #17162269;
+    margin:20px 0;
+    border: 1px solid #e53170;
+    border-radius: 3px;
+    background: #0F0E16;
+    width:340px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#projeto-box {
+    box-sizing: border-box;
+
+}
+
+#projetos h2 {
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    color:#e53170;
+    
+}
+
+time {
+    font-size: 0.7em;
+    color: #696969;
+}
+
+.projetos-img {
+    width:inherit;
+    border: 1px solid #dddcdc;
+}
+
+.projetos-img img {
+    width:100%;
+}
+
+.projeto-descricao {
+    width: 320px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.projeto-descricao h4 {
+    font-size: 16px;
+    color: #e53170;
+}
+
+.projeto-descricao p {
+    font-size: 0.8em;
+    color: #999999;
+}
+
+/* --------------------------------- CONTATO -------------------------------- */
+
+section#contato {
+    box-sizing: border-box;
+    padding:10px;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background:url(./img/Sem\ Título-1.jpg) no-repeat;
+    background-size:cover;
+
+}
+
+
+
+legend {
+    color:rgb(255, 93, 93);
+    text-align: center;
+    padding:10px;
+    font-size:1.4em;
+}
+
+
+.form {
+    margin:10px 0 0 0;
+    box-sizing: border-box;
+    padding:10px;
+    width:330px;
+    height:440px;
+    background-color: #f5f5f5;
+    text-align: center;
+    font-size:0.9em;
+    
+
+}
+
+.form input {
+    padding:10px 13px;
+width:90%;
+margin-top:5px;
+color:  #FF8806 ;
+background:#ffffff;
+outline:none;
+border:1px solid #fc9e33;
+}
+.form input[type="submit"] {
+    color:#ffffff;
+background-color: #FF8806;
+border:none;
+width:240px;
+border-radius:04px;
+}
+.form select {
+    padding:10px 13px;
+width:90%;
+margin-top:5px;
+color:#696969;
+border:1px solid #fc9e33;
+}
+.form textarea {
+    border:1px solid #fc9e33;
+   padding:10px 13px;
+width:90%;
+margin-top:5px;
+color:#696969;
+height:90px;
+resize: none;
+
+}
+
+
+.div-msg  {
+    background-color:#0f0e16;
+    padding:20px;
+    border:1px dotted #FF8806;
+}
+.div-msg p {
+   color: #696969; 
+}
+.div-msg h4{
+color: #fc9e33;
+}
+
+footer {
+    width:100%;
+    background-color: #171622;
+    padding:20px 0;
+    color: #696969;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    margin:0;
+    text-align: center;
+}
+#social-media span {
+    font-size:1.8em;
+}
+
+#social-media i {
+   color: #696969;
+   font-size:1.8em;
+   margin:5px;
+   
+}
+
+#social-media {
+    padding:5px;
+}
